@@ -2,9 +2,9 @@
 SCSS Rem solution
 
 
-### 实现原理
+### ʵ��ԭ��
 
-我们知道，以Chorme为例，浏览器的html默认字体为16px,因此，px和rem存在如下对应关系：
+����֪������ChormeΪ�����������htmlĬ������Ϊ16px,��ˣ�px��rem�������¶�Ӧ��ϵ��
 
 > px/font-size = rem
 
@@ -24,7 +24,7 @@ SCSS Rem solution
     ------------------------
 ```
 
-其实还有个更好的，那就是设置html的字体大小为10px：
+��ʵ���и����õģ��Ǿ�������html�������СΪ10px��
 
 ```
 	|  px  |     rem       |
@@ -41,11 +41,11 @@ SCSS Rem solution
     |  48  | 48/10 =  4.8  |
     ------------------------
 ```
-我们通常使用rem时，切设计稿的时候就会量出资源的宽高，再把宽高转换成rem单位，使用了sass之后呢，这一步就可以使用函数或者@mixin了。
+����ͨ��ʹ��remʱ������Ƹ��ʱ��ͻ�������Դ�Ŀ��ߣ��ٰѿ���ת����rem��λ��ʹ����sass֮���أ���һ���Ϳ���ʹ�ú�������@mixin�ˡ�
 
-rem.scss就是把这些操作收集成为一个集合。
+rem.scss���ǰ���Щ�����ռ���Ϊһ�����ϡ�
 
-### 用法：
+### �÷���
 
 `pxToRem`:
 
@@ -76,7 +76,7 @@ rem.scss就是把这些操作收集成为一个集合。
 ```
 
 `remMixin`:
-@mixin用法
+@mixin�÷�
 
 ```
 	//scss
